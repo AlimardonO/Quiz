@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <form>
+        <section id="section1">
+            <div class="container">
+                <div class="question">
+                    Question?
+                </div>
+                <div class="test">
+                    <input class="einput" type="radio" name="first" value="true">
+                    <div class="input-container">
+                        <span>A</span>
+                        <label for="test">true</label>
+                        <!-- <input class="einput" type="radio" name="first" value="true"> -->
+                    </div>
+                </div>
+                <div class="test">
+                    <input class="einput" type="radio" name="first" value="false">
+                    <div class="input-container">
+                        <span>B</span>
+                        <label for="test">false</label>
+                    </div>
+                </div>
+                <div class="test">
+                    <input class="einput" type="radio" name="first" value="false">
+                    <div class="input-container">
+                        <span>C</span>
+                        <label for="test">false</label>
+                    </div>
+                </div>
+                <div class="test">
+                    <input class="einput" type="radio" name="first" value="false">
+                    <div class="input-container">
+                        <span>D</span>
+                        <label for="test">false</label>
+                    </div>
+                </div>
+                <a href="#section2" class="ablue">Следующий вопрос</a>
+            </div>
+        </section>
+    
+    
+        <!---------------------------------------------- section 2 --------------------------------------------------->
+    
+    
+        <section id="section2">
+            <div class="container">
+                <div class="question">
+                    Question?
+                </div>
+                <div class="test">
+                    <input class="einput inp2" type="radio" name="second" value="false">
+                    <div class="input-container green">
+                        <span>A</span>
+                        <label for="test">false</label>
+                    </div>
+                </div>
+                <div class="test">
+                    <input class="einput inp2" type="radio" name="second" value="false">
+                    <div class="input-container green">
+                        <span>B</span>
+                        <label for="test">false</label>
+                    </div>
+                </div>
+                <div class="test">
+                    <input class="einput inp2" type="radio" name="second" value="true">
+                    <div class="input-container green">
+                        <span>C</span>
+                        <label for="test">true</label>
+                    </div>
+                </div>
+                <div class="test">
+                    <input class="einput inp2" type="radio" name="second" value="false">
+                    <div class="input-container green">
+                        <span>D</span>
+                        <label for="test">false</label>
+                    </div>
+                </div>
+                <a href="#section1" class="agreen pred">Предыдущий вопрос</a>
+                <a href="#section3" class="agreen">Следующий вопрос</a>
+            </div>
+        </section>
+    
+    
+        <!---------------------------------------------- section3 ------------------------------------>
+    
+        <section id="section3">
+            <div class="container">
+                <div class="question">
+                    Question?
+                </div>
+                <div class="test">
+                    <input class="einput inp3" type="radio" name="third" value="false">
+                    <div class="input-container darkgreen">
+                        <span>A</span>
+                        <label for="test">false</label>
+                    </div>
+                </div>
+                <div class="test">
+                    <input class="einput inp3" type="radio" name="third" value="true">
+                    <div class="input-container darkgreen">
+                        <span>B</span>
+                        <label for="test">true</label>
+                    </div>
+                </div>
+                <div class="test">
+                    <input class="einput inp3" type="radio" name="third" value="false">
+                    <div class="input-container darkgreen">
+                        <span>C</span>
+                        <label for="test">false</label>
+                    </div>
+                </div>
+                <div class="test">
+                    <input class="einput inp3" type="radio" name="third" value="false">
+                    <div class="input-container darkgreen">
+                        <span>D</span>
+                        <label for="test">false</label>
+                    </div>
+                </div>
+                <a href="#section2" class="adarkgreen pred">Предыдущий вопрос</a>
+                <a href="#finish" class="adarkgreen" id="sbm">Резултаты</a>
+            </div>
+        </section>
+    <div id="finish" class="none">
+        <section id="section4">
+            <div class="container">
+                <div class="mini-container">
+                    <span id="answer">
+                        
+                    </span>
+                    <div id="emoji">
+
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+</form>
+    <script src="./js/main.js"></script>
+</body>
+</html>
